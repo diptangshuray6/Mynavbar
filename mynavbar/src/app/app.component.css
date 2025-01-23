@@ -1,0 +1,40 @@
+
+/* for side navbar */
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: turquoise;
+}
+
+
+.example-spacer {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and ( max-width:5000px) {
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-toolbar{
+
+    background-color:lightblue;
+  }
+
+  .row{
+    display: flex;
+  }
+  .row,.column{
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+}
+
+
+
