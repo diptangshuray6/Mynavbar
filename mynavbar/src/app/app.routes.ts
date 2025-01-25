@@ -1,18 +1,17 @@
 import { Routes } from '@angular/router';
-import { DummyComponent } from './dummy/dummy.component';
+import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
-
 import { SignupComponent } from './signup/signup.component';
-
+import { DummyComponent } from './dummy/dummy.component';
 
 export const routes: Routes = [
-  // {path:'',redirectTo:'navigation', pathMatch:'full'},
-  // {path:'dummy',component:DummyComponent},
-  // {path:'services',component:ServicesComponent},
-  // {path:'contacts',component:ContactsComponent},
-  // {path:'aboutUs',component:AboutusComponent},
-  // {path:'signUp',component:SignupComponent}
-
+  { path: '', component: HomeComponent },
+  { path: 'about-us', component: AboutusComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'contacts', component: ContactsComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'dummy', component: DummyComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

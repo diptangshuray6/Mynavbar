@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dummy',
-  imports: [],
+  imports: [DummyComponent],
   templateUrl: './dummy.component.html',
   styleUrl: './dummy.component.css'
 })

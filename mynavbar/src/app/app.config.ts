@@ -13,18 +13,7 @@ export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay()), provideAnimationsAsync()]
 };
 
-// @NgModule({
-//   declarations: [
-//     AppComponent,
-//     NavbarComponent
-//   ],
-//   imports:[
-//     BrowserModule,
-//     BrowserAnimationsModule
-//   ],
-//   bootstrap:[AppComponent]
-// })
-// export class AppModule { }
+
 
 
 
